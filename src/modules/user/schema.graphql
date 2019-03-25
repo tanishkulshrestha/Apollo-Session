@@ -1,0 +1,11 @@
+type User {
+  id: Int!
+  name: String
+  friends: [User]
+  messages: [Message]
+}
+type Message {
+  id: Int!
+  text: String!
+  userMessage: [User]
+}
